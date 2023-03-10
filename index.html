@@ -1,0 +1,116 @@
+<!--
+
+  Clariana Nogueira da Silva Costa
+  https://github.com/Moaps/
+  https://www.linkedin.com/in/clariananogueira/
+
+  Criar uma tela de cadastro com Nome, Email e Senha. Focar em criar uma tela bonita que
+  apresente bem suas habilidades de HTML, CSS e JavaScript.
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-Br">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css" /> <!-- Linkando o arquivo .css ao .html -->
+    <link rel="shortcut icon" href="PageIcon.png" /> <!-- Adicionando um ícone à página -->
+  </head>
+
+  <body>
+    <div class="container">
+
+
+      <!-- Criando o formulário  de cadastro -->
+
+
+      <form class="form" id="cadastro">
+        <h1 class="form_titulo">Cadastrar</h1>
+
+        <!-- Criando os inputs -->
+
+        <!-- INPUT DE NOME -->
+        <div class="form_input-grupo">
+          <input type="text" class="form_input" autofocus placeholder="Nome" />
+        </div>
+        <div class="form_input-grupo">
+          <input
+            type="email"
+            class="form_input"
+            placeholder="Email"
+          />
+        </div>
+
+        <!-- INPUT DE SENHA-->
+        <div class="form_input-grupo">
+          <input
+            type="password"
+            class="form_input"
+            placeholder="Senha"
+          />
+        </div>
+
+        <!-- INPUT DE CONFIRMAÇÃO DE SENHA -->
+        <div class="form_input-grupo">
+          <input
+            type="password"
+            class="form_input"
+            placeholder="Confirme sua senha"
+          />
+        </div>
+
+        <button class="form_botao" type="submit">Criar</button> <!-- Crio o botão, com o atributo submit para criar a relação de envio com o formulário  -->
+        
+        <p class="form_texto"> <!-- Crio um hiperlink  -->
+          <a class="form_link" href="./" id="linkEntrar" 
+            >Já possuí uma conta? Entrar.</a>
+        </p>
+        <p></p> <!-- OBS: ESSE PULO DE LINHA É APENAS POR MOTIVOS DE ESTILIZAÇÃO DA TELA -->
+      </form>
+
+
+      <!-- Criando o formulário de login -->
+
+
+      <form class="form form-escondido" id="login">
+        <h1 class="form_titulo">Login</h1>
+
+        <!-- Criando os Inputs-->
+            
+        <!-- INPUT DE NOME OU EMAIL -->
+        <div class="form_input-grupo">
+          <input
+            type="text"
+            class="form_input"
+            autofocus
+            placeholder="Nome ou email"
+          />
+        </div>
+
+        <!-- INPUT DE SENHA -->
+        <div class="form_input-grupo">
+          <input
+            type="password"
+            class="form_input"
+            placeholder="Senha"
+          />
+        </div>
+
+        <button class="form_botao" type="submit">Entrar</button> <!-- Crio o botão, com o atributo submit para criar a relação de envio com o formulário  -->
+        
+        <p class="form_texto"> <!-- Crio ambos os hiperlinks de esqueci a senha e criar uma conta.  -->
+          <a href="#" class="form_link">Esqueci minha senha.</a>
+        </p>
+        <p class="form_texto">
+          <a class="form_link" href="./" id="linkCriarConta"
+            >Não tem uma conta? Criar.</a>
+        </p>
+      </form>
+    </div>
+
+    <script src="script.js"></script> <!-- Linko o arquivo .js ao .html -->
+
+  </body>
+</html>
